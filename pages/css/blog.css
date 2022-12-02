@@ -1,0 +1,125 @@
+.caption {
+    color: #fff;
+    text-align: center;
+}
+
+.caption h1 {
+    font-size: 4rem;
+}
+
+.caption p {
+    font-size: 1.3rem;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: .5rem;
+    margin-top: 2rem;
+}
+
+.item {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #707070;
+    border-radius: .7rem;
+    color: #fff;
+    margin: .6rem;
+    position: relative;
+    transition: .3s;
+}
+
+.item:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.item:hover .coming-soon {
+    color: #000;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.item:hover .coming-soon p{
+    color: #000;
+    transition: .3s;
+}
+
+
+.item img {
+    width: 12%;
+    margin: 1rem 0 .5rem .7rem;
+}
+
+.item h1 {
+    font-size: 1.4rem;
+    padding: .3rem 0 1rem 1rem;
+}
+
+.item p {
+    color: #828282;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.coming-soon {
+    text-align: center;
+    align-items: center;
+    background-color: #102142;
+    border-radius: .7rem;
+    position: absolute;
+    top: 0;
+    left: 68%;
+    transition: .3s;
+}
+
+.coming-soon p {
+    color: #4A7DE3;
+    font-size: .8rem;
+    padding: .6rem 1rem;
+    transition: .3s;
+}
+
+@media screen and (max-width: 990px) {
+    .grid-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .caption h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .grid-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .coming-soon {
+        left: 72%;
+    }
+
+    .caption h1 {
+        font-size: 1rem;
+    }
+
+    .caption p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .coming-soon {
+        left: 68%;
+    }
+}
