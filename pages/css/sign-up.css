@@ -86,7 +86,6 @@ input{
     padding: .5rem 2rem;
     align-items: center;
     transition: .3s;
-    min-height: 60px;
 }
 
 .reg-link:hover {
